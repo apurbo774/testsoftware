@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1, num2;
+    char operation;
+
+    cout << "Welcome to the simple calculator!" << endl;
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter operation (+ or -): ";
+    cin >> operation;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    if (operation == '+') {
+        cout << "Result: " << num1 + num2 << endl;
+    } else if (operation == '-') {
+        cout << "Result: " << num1 - num2 << endl;
+    } else {
+        cout << "Invalid operation! Please use + or -." << endl;
+    }
+
+    return 0;
+}
